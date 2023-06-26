@@ -23,7 +23,6 @@ print("Diameter calculation based on x inputs")
 print(model.predict(x)) 
 print()
 
-
 # creating own data using linspace(create data within a range, here range also included)
 print("Data Prediction using new dataset-linspace()!!!")
 v1 = np.linspace(0,25,20) # 0 to 25 range,20 number of datas
@@ -45,13 +44,3 @@ plt.scatter(x,y)     #  scatter plot
 plt.plot(x,model.predict(x),c='r')
 plt.show()
 print()
-
-print("Residual Sum of Squares Calculation!!!!")
-print("Residual Sum of Squares:%.4f"%(((model.predict(x))-y)**2).sum())
-print()
-
-print("Mean Squared Error Calculation!!!!")
-RSS = (((model.predict(x))-y)**2).sum()
-l = len(x)
-MSE = RSS/l
-print("Mean Squared Error:%.4f"%MSE)
