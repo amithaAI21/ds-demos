@@ -2,12 +2,12 @@
 
 # pip install matplotlib
 
-x = [[6], [8], [10], [14],[18]] # diameter (inches)
-y = [[7], [9], [13], [17.5], [18]] # price
-
 # importing necessary libraries
 import numpy as np
 from sklearn.linear_model import LinearRegression
+
+x = [[6], [8], [10], [14],[18]] # diameter (inches)
+y = [[7], [9], [13], [17.5], [18]] # price
 
 model = LinearRegression()
 model.fit(x,y) # teaching the model
